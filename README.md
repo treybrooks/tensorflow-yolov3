@@ -2,7 +2,7 @@
 
 ## Please install tensorflow-gpu 1.11.0 !  Since Tensorflow is fucking ridiculous !
 
-## part 1. Introduction [[代码剖析]](https://github.com/YunYang1994/CodeFun/blob/master/computer_vision/YOLOv3.md)
+## part 1. Introduction [[代码剖析]](https://github.com/YunYang1994/ai-notebooks/blob/master/YOLOv3.md)
 
 Implementation of YOLO v3 object detector in Tensorflow. The full details are in [this paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf).  In this project we cover several segments as follows:<br>
 - [x] [YOLO v3 architecture](https://github.com/YunYang1994/tensorflow-yolov3/blob/master/core/yolov3.py)
@@ -25,7 +25,7 @@ $ git clone https://github.com/YunYang1994/tensorflow-yolov3.git
 $ cd tensorflow-yolov3
 $ pip install -r ./docs/requirements.txt
 ```
-3. Exporting loaded COCO weights as TF checkpoint(`yolov3_coco.ckpt`)
+3. Exporting loaded COCO weights as TF checkpoint(`yolov3_coco.ckpt`)【[BaiduCloud](https://pan.baidu.com/s/11mwiUy8KotjUVQXqkGGPFQ&shfl=sharepset)】
 ```bashrc
 $ cd checkpoint
 $ wget https://github.com/YunYang1994/tensorflow-yolov3/releases/download/v1.0/yolov3_coco.tar.gz
@@ -75,14 +75,14 @@ Extract all of these tars into one directory and rename them, which should have 
 
 ```bashrc
 
-VOC           # path:  /home/yang/test/VOC/
+VOC           # path:  /home/yang/dataset/VOC
 ├── test
 |    └──VOCdevkit
-|       └──VOC2007 (from VOCtest_06-Nov-2007.tar)
+|        └──VOC2007 (from VOCtest_06-Nov-2007.tar)
 └── train
      └──VOCdevkit
-             └──VOC2007 (from VOCtrainval_06-Nov-2007.tar)
-             └──VOC2012 (from VOCtrainval_11-May-2012.tar)
+         └──VOC2007 (from VOCtrainval_06-Nov-2007.tar)
+         └──VOC2012 (from VOCtrainval_11-May-2012.tar)
                      
 $ python scripts/voc_annotation.py --data_path /home/yang/test/VOC
 ```
@@ -132,6 +132,8 @@ $ wget http://images.cocodataset.org/annotations/image_info_test2017.zip
 ## part 4. Other Implementations
 
 [-**`YOLOv3目标检测有了TensorFlow实现，可用自己的数据来训练`**](https://mp.weixin.qq.com/s/cq7g1-4oFTftLbmKcpi_aQ)<br>
+
+[-**`Stronger-yolo`**](https://github.com/Stinky-Tofu/Stronger-yolo)<br>
 
 [- **`Implementing YOLO v3 in Tensorflow (TF-Slim)`**](https://itnext.io/implementing-yolo-v3-in-tensorflow-tf-slim-c3c55ff59dbe)
 

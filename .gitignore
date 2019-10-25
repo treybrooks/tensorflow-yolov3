@@ -17,8 +17,12 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 
+<<<<<<< HEAD
 /*/__pycache__/*
 /.ipynb_checkpoints/*
 /checkpoint/*
 /data/detection/
 *.pb
+=======
+/checkpoint/*
+>>>>>>> a59d6ff31464a3ebf5a70bf1b7dda92514e8d0a1
